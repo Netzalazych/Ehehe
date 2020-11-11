@@ -1,0 +1,6 @@
+
+cX = 200
+cY = 4
+cZ = 0
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(cX*16*3,cY*16*3,cZ*16*3))
