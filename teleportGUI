@@ -1,0 +1,215 @@
+---------------------------------------------------------------------------
+-- Scripts in the GUI aren't mine,they belong to their respective owners.--
+-- Made by Altair Studios/CeeTechNG                                      --
+---------------------------------------------------------------------------
+local AndromedaV2 = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local SelectFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local SelectScriptsandGUIs = Instance.new("TextButton")
+local SelectExitButton = Instance.new("TextButton")
+local ExecuteFrame = Instance.new("Frame")
+local Reviz= Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local HyperTotal = Instance.new("TextButton")
+local Shattervast = Instance.new("TextButton")
+local Dab = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Clip = Instance.new("TextButton")
+
+
+--Properties:
+AndromedaV2.Name = "Andromeda V2"
+AndromedaV2.Parent = game.CoreGui
+ 
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = AndromedaV2
+OpenFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+OpenFrame.BorderSizePixel = 0
+OpenFrame.Position = UDim2.new(0, 0, 0.464143455, 0)
+OpenFrame.Size = UDim2.new(0, 150, 0, 35)
+OpenFrame.Visible = false
+OpenFrame.Active = true
+OpenFrame.Draggable = true
+OpenFrame.Visible = false
+OpenFrame.Active = true
+OpenFrame.Draggable = true
+ 
+Open.Name = "Open"
+Open.Parent = OpenFrame
+Open.BackgroundColor3 = Color3.new(1, 1, 1)
+Open.BackgroundTransparency = 1
+Open.Position = UDim2.new(0, 0, -4.35965404e-07, 0)
+Open.Size = UDim2.new(0, 125, 0, 35)
+Open.Font = Enum.Font.Highway
+Open.Visible = false
+Open.Text = "Open"
+Open.TextColor3 = Color3.new(1, 1, 1)
+Open.TextSize = 30
+Open.MouseButton1Down:connect(function()
+	SelectFrame.Visible = false
+	Open.Visible = false
+end)
+ 
+SelectFrame.Name = "SelectFrame"
+SelectFrame.Parent = AndromedaV2
+SelectFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+SelectFrame.BorderSizePixel = 0
+SelectFrame.Position = UDim2.new(0.409394562, 0, 0.35059765, 0)
+SelectFrame.Size = UDim2.new(0, 238, 0, 149)
+SelectFrame.Visible = false
+SelectFrame.Active = true
+SelectFrame.Draggable = true
+ 
+Title.Name = "Title"
+Title.Parent = SelectFrame
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(0, 238, 0, 50)
+Title.Font = Enum.Font.Highway
+Title.Text = "theJV3gui."
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextSize = 25
+
+SelectScriptsandGUIs.Name = "Select Scripts and GUIs"
+SelectScriptsandGUIs.Parent = SelectFrame
+SelectScriptsandGUIs.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+SelectScriptsandGUIs.BorderColor3 = Color3.new(1, 1, 1)
+SelectScriptsandGUIs.BorderSizePixel = 2
+SelectScriptsandGUIs.Position = UDim2.new(0.0588235259, 0, 0.369865924, 0)
+SelectScriptsandGUIs.Size = UDim2.new(0, 210, 0, 35)
+SelectScriptsandGUIs.Font = Enum.Font.Highway
+SelectScriptsandGUIs.Text = "Scripts and GUIs"
+SelectScriptsandGUIs.TextColor3 = Color3.new(1, 1, 1)
+SelectScriptsandGUIs.TextSize = 25
+SelectScriptsandGUIs.MouseButton1Down:connect(function()
+	ExecuteFrame.Visible = true
+	SelectFrame.Visible = false
+end)
+ 
+SelectExitButton.Name = "SelectExitButton"
+SelectExitButton.Parent = SelectFrame
+SelectExitButton.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+SelectExitButton.BorderColor3 = Color3.new(1, 1, 1)
+SelectExitButton.BorderSizePixel = 2
+SelectExitButton.Position = UDim2.new(0.0588235259, 0, 0.682038784, 0)
+SelectExitButton.Size = UDim2.new(0, 210, 0, 35)
+SelectExitButton.Font = Enum.Font.Highway
+SelectExitButton.Text = "Exit"
+SelectExitButton.TextColor3 = Color3.new(1, 1, 1)
+SelectExitButton.TextSize = 25
+SelectExitButton.MouseButton1Down:connect(function()
+	SelectFrame.Visible = false
+end)
+ 
+ExecuteFrame.Name = "ExecuteFrame"
+ExecuteFrame.Parent = AndromedaV2
+ExecuteFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+ExecuteFrame.BorderSizePixel = 0
+ExecuteFrame.Position = UDim2.new(0.313952088, 0, 0.205179334, 0)
+ExecuteFrame.Size = UDim2.new(0, 307, 0, 500)
+ExecuteFrame.Visible = true
+ExecuteFrame.Active = true
+ExecuteFrame.Draggable = true
+ 
+Reviz.Name = "Reviz"
+Reviz.Parent = ExecuteFrame
+Reviz.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+Reviz.BorderColor3 = Color3.new(1, 1, 1)
+Reviz.BorderSizePixel = 2
+Reviz.Position = UDim2.new(0.05, 0, 0.2, 0)
+Reviz.Size = UDim2.new(0, 250, 0, 35)
+Reviz.Font = Enum.Font.Highway
+Reviz.Text = "To Flatlands"
+Reviz.TextColor3 = Color3.new(1, 1, 1)
+Reviz.TextSize = 25
+Reviz.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Netzalazych/Ehehe/main/To%20Flatlands"))()
+end)
+ 
+Title_2.Name = "Title"
+Title_2.Parent = ExecuteFrame
+Title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_2.BackgroundTransparency = 1
+Title_2.Position = UDim2.new(0.125819355, 0, -0.000359870493, 0)
+Title_2.Size = UDim2.new(0, 369, 0, 50)
+Title_2.Font = Enum.Font.Highway
+Title_2.Text = "theJV3gui."
+Title_2.TextColor3 = Color3.new(1, 1, 1)
+Title_2.TextSize = 40
+ 
+HyperTotal.Name = "HyperTotal"
+HyperTotal.Parent = ExecuteFrame
+HyperTotal.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+HyperTotal.BorderColor3 = Color3.new(1, 1, 1)
+HyperTotal.BorderSizePixel = 2
+HyperTotal.Position = UDim2.new(0.05, 0, 0.3, 0)
+HyperTotal.Size = UDim2.new(0, 250, 0, 35)
+HyperTotal.Font = Enum.Font.Highway
+HyperTotal.Text = "To New Spawn"
+HyperTotal.TextColor3 = Color3.new(1, 1, 1)
+HyperTotal.TextSize = 25
+HyperTotal.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Netzalazych/Ehehe/main/To%20New%20Spawn"))()
+end)
+ 
+Shattervast.Name = "Shattervast"
+Shattervast.Parent = ExecuteFrame
+Shattervast.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+Shattervast.BorderColor3 = Color3.new(1, 1, 1)
+Shattervast.BorderSizePixel = 2
+Shattervast.Position = UDim2.new(0.05, 0, 0.7, 0)
+Shattervast.Size = UDim2.new(0, 250, 0, 35)
+Shattervast.Font = Enum.Font.Highway
+Shattervast.Text = "Infinite Jump"
+Shattervast.TextColor3 = Color3.new(1, 1, 1)
+Shattervast.TextSize = 25
+Shattervast.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Netzalazych/Ehehe/main/infinite%20jump%20*xd*"))()
+end)
+ 
+Dab.Name = "Dab"
+Dab.Parent = ExecuteFrame
+Dab.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+Dab.BorderColor3 = Color3.new(1, 1, 1)
+Dab.BorderSizePixel = 2
+Dab.Position = UDim2.new(0.05, 0, 0.4, 0)
+Dab.Size = UDim2.new(0, 250, 0, 35)
+Dab.Font = Enum.Font.Highway
+Dab.Text = "To Goodhill"
+Dab.TextColor3 = Color3.new(1, 1, 1)
+Dab.TextSize = 25
+Dab.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Netzalazych/Ehehe/main/To%20Goodhill"))()
+end)
+ 
+Noclip.Name = "Noclip"
+Noclip.Parent = ExecuteFrame
+Noclip.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+Noclip.BorderColor3 = Color3.new(1, 1, 1)
+Noclip.BorderSizePixel = 2
+Noclip.Position = UDim2.new(0.05, 0, 0.5, 0)
+Noclip.Size = UDim2.new(0, 250, 0, 35)
+Noclip.Font = Enum.Font.Highway
+Noclip.Text = "To Old Spawn"
+Noclip.TextColor3 = Color3.new(1, 1, 1)
+Noclip.TextSize = 25
+Noclip.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Netzalazych/Ehehe/main/To%20Old%20Spawn"))()end)
+ end)
+
+Clip.Name = "Clip"
+Clip.Parent = ExecuteFrame
+Clip.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+Clip.BorderColor3 = Color3.new(1, 1, 1)
+Clip.BorderSizePixel = 2
+Clip.Position = UDim2.new(0.05, 0, 0.6, 0)
+Clip.Size = UDim2.new(0, 250, 0, 35)
+Clip.Font = Enum.Font.Highway
+Clip.Text = "To JV3's Base"
+Clip.TextColor3 = Color3.new(1, 1, 1)
+Clip.TextSize = 25
+Clip.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/kEYFFpnB"))()
+end)
